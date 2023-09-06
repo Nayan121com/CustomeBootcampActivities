@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+</head>
+
+<div>
+    <div class="header">BOOKING FORM</div>
+
+    <form action="">
+        <fieldset>
+            <legend>Passenger</legend>
+
+            <label id="FN" for="\">First Name</label>
+
+            <label id="LN" for="\">Last Name</label>
+
+            <label id="Age" for="\">Age</label> <br />
+
+            <input id = "first_name" style="margin-left: 40px" type="text" />
+
+            <input id="last_name" style="margin-left: 40px" type="text" />
+
+            <input id="age" style="margin-left: 40px" type="number" />
+        </fieldset>
+
+        <div class="box2">
+            <label id="LFC" for=""> Leaving Form (city or airport) </label>
+
+            <label id="GFC" for=""> Going to (city or airport) </label>
+
+            <label id="class" for=""> Class </label><br />
+
+            <input id="leaving_from"style="margin-left: 30px; height: 20px" type="text" />
+
+            <input id="going_to"style="margin-left: 80px; height: 20px" type="text" />
+
+            <input id="classInput" style="margin-left: 220px; height: 20px" type="number" /> <br />
+
+            <div>
+                <label style="padding-left: 500px" for="">Date</label> <br />
+
+                <div style="padding-top: 30px">
+                    <label style="padding-left: 140px" for="">Period from</label>
+                    <input id="from_date" type="date" />
+                </div>
+                <br />
+
+                <label style="padding-left: 140px" for=""> To</label>
+                <input id="to_date" type="date" />
+            </div>
+
+            <div style="padding-left: 600px; position: relative; bottom: 50px">
+                <input type="button" onclick="showProducts()"/><h3>Go</h3>
+            </div>
+
+            <div id="bookingList"></div>
+        </div>
+    </form>
+</div>
+
+<script src="booking.js">
+    function fun() {
+        showProducts();
+        // let programOfFlights = getElementById("progOfFlights");
+
+        programOfFlights.innerHtml = ```
+
+ 
+
+            <table>
+
+ 
+
+                <tr>
+
+ 
+
+                  <th>Date</th>
+
+ 
+
+                  <th>First Number</th>
+
+ 
+
+                  <th>Hour of Departure</th>
+
+ 
+
+                  <th>Hour of Arrival</th>
+
+ 
+
+                  <th>plane</th>
+
+ 
+
+                </tr>
+
+ 
+
+                <tr>
+
+ 
+
+                  <td>Tuesday 01/08/2005</td>
+
+ 
+
+                  <td>1002</td>
+
+ 
+
+                  <td>07H50</td>
+
+ 
+
+                  <td>09H34</td>
+
+ 
+
+                  <td>A223</td>
+
+ 
+
+                </tr>
+
+ 
+
+              </table>
+
+ 
+
+            ```;
+    }
+</script>
+
+</html>
